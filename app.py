@@ -19,7 +19,7 @@ st.caption("Your personal AI professor for engineering subjects.")
 
 # Sidebar settings
 with st.sidebar:
-    st.header("Settings")
+    st.header("")
 
     default_key = st.secrets.get("GROQ_API_KEY", "") if hasattr(st, "secrets") else ""
     if default_key:
@@ -32,7 +32,7 @@ with st.sidebar:
             type="password",
             help="Get a free key at https://console.groq.com/keys",
         )
-    model_name = st.text_input("Model name", value=DEFAULT_MODEL)
+    # model_name = st.text_input("", value=)
 
     st.divider()
     st.subheader("Your profile")
