@@ -32,7 +32,7 @@ with st.sidebar:
             type="password",
             help="Get a free key at https://console.groq.com/keys",
         )
-    # model_name = st.text_input("", value=)
+    model_name = DEFAULT_MODEL
 
     st.divider()
     st.subheader("Your profile")
@@ -106,7 +106,7 @@ if user_input:
     with st.chat_message("assistant", avatar="🎓"):
         with st.spinner("Thinking..."):
             try:
-                parsed = ask_agent(effective_input, st.session_state.chat_history, api_key=api_key, model=model_name)
+                parsed = ask_agent(effective_input, st.session_state.chat_history, api_key=api_key, model=DEFAULT_MODEL)
             except RuntimeError as e:
                 st.error(str(e))
                 st.stop()
