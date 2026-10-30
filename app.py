@@ -24,7 +24,7 @@ with st.sidebar:
     default_key = st.secrets.get("GROQ_API_KEY", "") if hasattr(st, "secrets") else ""
     if default_key:
         api_key = default_key
-        st.success("✅ AI engine connected")
+        # st.success("✅ AI engine connected")
     else:
         api_key = st.text_input(
             "Groq API Key",
