@@ -49,7 +49,7 @@ with st.sidebar:
 
     st.divider()
     st.markdown(
-        "**"
+        ""
     )
     if st.button("Clear conversation"):
         st.session_state.chat_history = []
