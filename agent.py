@@ -9,7 +9,7 @@ import requests
 from prompts import SYSTEM_PROMPT
 
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
-DEFAULT_MODEL = ""openai/gpt-oss-120b""  # fast + free on Groq
+DEFAULT_MODEL = "openai/gpt-oss-120b"  # fast + free on Groq
 
 
 class ParsedResponse:
