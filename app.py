@@ -49,9 +49,7 @@ with st.sidebar:
 
     st.divider()
     st.markdown(
-        "**Setup checklist:**\n"
-        "1. Get a free Groq API key: console.groq.com/keys\n"
-        "2. Paste it above (or set it in Streamlit Cloud secrets as `GROQ_API_KEY`)\n"
+        "**"
     )
     if st.button("Clear conversation"):
         st.session_state.chat_history = []
